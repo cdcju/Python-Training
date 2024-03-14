@@ -1,0 +1,70 @@
+#Creating a class and define a instance
+
+class Person:
+    "A class about person"
+    name= "Agniswar"
+    age = 36
+    def display(self):
+        print(self.name)
+        print(self.age)
+
+p = Person()
+
+p.display()  
+
+
+# cereating constructor
+
+class Person:
+    def __init__(self):    # constructor
+        self.name= "Agniswar"
+        self.age = 36
+
+
+    def display(self):
+        print(self.age, end="\n")
+        print(self.name) 
+
+P = Person()
+
+P.display()
+
+
+# inntance valiable
+
+class Students:
+    #constructor
+    def __init__(self, n ='', m=0):
+        self.name = n
+        self.marks = m
+
+    def display(self):
+        print("Your name is", self.name)
+        print("Your marks is", self.marks)
+    
+    def grade(self) :
+        if(self.marks > 60):
+            print ("Grade A")
+        else:
+            print("Grade B")
+
+p = int(input("How many Students?"))
+
+i=0
+
+while i < p:
+    
+    name = input("enter your name")
+    marks = int(input("Enter marks"))
+    s = Students(name, marks)
+    print("===========")
+    s.display()
+    s.grade()
+    print("===========")
+    i=i+1
+
+
+
+
+
+

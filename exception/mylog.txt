@@ -1,0 +1,5 @@
+ERROR:root:This is an error
+CRITICAL:root:This is a problem in software design
+WARNING:root:It is just a warning
+INFO:root:Nothing to worry
+DEBUG:root:In line number 10 there is a systax error
